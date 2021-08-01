@@ -1,5 +1,29 @@
+
 body {
+    align-items: center;
     background-color: aqua;
-    color: red;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    
 }
+
+.main_container {
+    width: 800px;
+    background-color: rgb(54, 163, 214);
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 10px 5px;
+    text-shadow: 0 0 5px;
+}
+
+.header,footer {
+    justify-content: center;
+    display: flex;
+}
+.product_list {
+    justify-content: center;
+    display: flex;
+    color: rgb(56, 5, 116);
+}
+
+
