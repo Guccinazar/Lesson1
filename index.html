@@ -4,21 +4,45 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My resume</title>
+    <title>My buy list</title>
     <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
-    <h2>Junior Front End Developer </h2>
-    <h1>Nazar Grygorchuk</h1>
-    <h2>Education</h2>
-    <h3>Ternopil Ivan Puluj National Technical University</h3>
-    <ul>
-        <li><a href="http://github.com/Guccinazar/" target="_blank" rel="noopener noreferrer">Github</a></li>
-        <li><a href="mailto://mail.google.com/mail/u/0/#inbox" target="_blank" rel="noopener noreferrer">Gmail</a></li>
-        <li><a href="http://www.linkedin.com/feed/" target="_blank" rel="noopener noreferrer">Linkedin</a></li>
-    </ul>
-    <img src="/20190608_211051.jpg" alt="My photo" width="350px">
-    <h4>My work Experience</h4>
-    <p>Lorem ipsum dolor sit amet.</p>
+    <main class="main_container">
+        <header class="header">
+            <h1>My buy list</h1>
+        </header>
+        <div class="product_list">
+            <ol>
+                <li class="checkpoint">
+                    <input type="checkbox" name="Beer" id="Beer">
+                    <label for="Beer">Beer</label>
+                </li>
+                <li class="checkpoint">
+                    <input type="checkbox" name="Chips" id="Chips">
+                    <label for="Chips">Chips</label>
+                </li>
+                <li class="checkpoint">
+                    <input type="checkbox" name="Milk" id="Milk">
+                    <label for="Milk">Milk</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="Bread" id="Bread">
+                    <label for="Bread">Bread</label>
+                </li>
+                <li class="checkpoint">
+                    <input type="checkbox" name="Potatos" id="Potatos">
+                    <label for="Potatos">Potatos</label>
+                </li>
+                <li class="checkpoint">
+                    <input type="checkbox" name="Meat" id="Meat">
+                    <label for="Meat">Meat</label>
+                </li>
+            </ol>
+        </div>
+        <footer class="footer">
+            <h2>P.S."Some sweets for a wife"</h2>
+        </footer>
+    </main>
 </body>
 </html>
