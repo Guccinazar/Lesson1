@@ -2,7 +2,7 @@ body {
     font-size: 20px;
     font-weight: 600;
     font-family: 'Times New Roman', Times, serif;
-    background-color: rgb(20, 66, 10);
+    background-color: rgb(47, 97, 36);
 }
 
 h1 {
@@ -14,12 +14,13 @@ h1 {
 a {
     color: tomato;
     text-decoration: none;
+    font-size: 25px;
 }
 
 section {
     text-align: center;
     color: slategray;
-    font-size: 30px;
+    font-size: 20px;
 }
 
 p {
