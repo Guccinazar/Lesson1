@@ -21,4 +21,29 @@ body {
     margin: 250px auto;
 }
 
+.customize__conteiner {
+    text-align: center;
+    margin: 50px;
+    line-height: 2em;
+}
+
+.customize__conteiner i {
+    color: blue;
+    font-size: 100px;
+    margin-bottom: 30px;
+}
+
+.customize__conteiner h2 {
+    margin-bottom: 20px;
+}
+
+.customize__conteiner p {
+    color: #b5babb;
+}
+
+.customize__conteiner:hover i {
+    color: cadetblue;
+    font-size: 120px;
+}
+
 
