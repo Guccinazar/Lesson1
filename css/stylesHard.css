@@ -108,6 +108,8 @@ span::before {
     background: #4a4f56;
     color: #eb7e7f;
     box-shadow: 3px 3px rgb(19, 19, 19), -1em 0 .4em black;
+    border-radius: 3px;
+
 }
 
 .footer_section h2::after {
