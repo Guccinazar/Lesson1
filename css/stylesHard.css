@@ -1,9 +1,142 @@
+@font-face {
+    font-family: Proxima Nova;
+    src: url(/fonts/Proxima\ Nova/Regular.otf);
+}
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC&display=swap');
 
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
 
+body {
+    max-width: 100%;
+    min-height: 100vh;
+    background: #000;
+    font-family: 'Proxima Nova', 'Playfair Display', Georgia, 'Times New Roman', Times, serif;  
+  }
 
+.main-conteiner {
+    position: relative;
+    display: block;
+    max-width: 60%;
+    height: 750px;
+    margin: 40px auto;
+    background:  #464f54;
+}
 
+.all-content {
+    position: absolute;
+    width: 720px;
+    height: 650px;
+    left: 150px;
+    bottom: 0;
+    filter: drop-shadow(0 0 17.5px rgba(0,0,0,0.22));
+    background-color: #ffffff;
+}
 
+.header {
+    font-family: 'Playfair Display';
+    position: relative;
+    width: 711px;
+    height: 150px;
+    top: -70px;
+    left: 150px;
+    background: #000;
+    color: #fff;
+    text-align: left;
+    font-size: 25px;
+    padding-left: 30px;
+    padding-top: 30px;
+}
 
+.header-text {
+    font-size: 15px;
+    letter-spacing: 5px;
+    line-height: 20px;
+    color: #767676;
+    font-family: "Proxima Nova";
+}
 
+.header-title {
+    font-size: 48px;
+    line-height: 50px;
+    color: #fefefe;
+    font-weight: 400;
+    font-family: "Playfair Display";
+    padding-bottom: 10px;
+}
 
+span {
+    font-size: 42px;
+}
 
+hr {
+    color: #000000;
+}
+
+.edit-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 641px;
+    height: 70px;
+    padding: 25px;
+    filter: drop-shadow(-3.536px -3.536px 29.5px rgba(0,0,0,0.16));
+    background-color: #fbc02d;
+    position: relative;
+    top: -70px;
+    left: 220px;
+    cursor: pointer;
+}
+
+.edit-section i {
+    color: #fefefe;
+    opacity: 0.6;
+}
+
+.edit-section i:hover {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.text-section {
+    margin-left: 30px;
+    padding-left: 30px;
+    border-left: 2px solid #c8c8c8;
+}
+
+.main-content__author {
+    font-size: 20px;
+    letter-spacing: 4px;
+    color: #b4b4b4;
+    font-family: "Proxima Nova";
+    margin-bottom: 20px;
+}
+
+.main-content__title {
+    font-size: 50px;
+    letter-spacing: 4px;
+    line-height: 34px;
+    color: #2a2a2a;
+    font-family: "Georgia";  
+    margin-bottom: 10px; 
+}
+
+.main-content__subtitle {
+    color: #8f8f8f;
+    font-style: italic;
+    font-family: "Georgia";
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.main-content__text {
+    font-size: 20px;
+    line-height: 38px;
+    color: #000000;
+    font-family: "Georgia";
+    text-align: left;
+    margin-bottom: 28px;
+}
