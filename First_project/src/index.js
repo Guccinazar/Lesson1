@@ -1,135 +1,150 @@
+// Task 1
+// let firstNumber=prompt("Enter the beginning of the range","");
+// let lastNumber=prompt("Enter the end of the range","");
+// let sum=0;
+ 
+// while(firstNumber < lastNumber){
+//        firstNumber++;
+//        sum+=firstNumber;    
+//     }
+ 
+// alert(sum)
 
-// // Task 1
-// const age = prompt('Please input your age');
+// Task 2
+// let firstNumber= +prompt("Enter the first number","");
+// let lastNumber= +prompt("Enter the second number","");
 
-// if (age >= 0 && age <= 12) {
-//     document.write('You are a child');
-// } else if (age > 12 && age <= 18) {
-//     document.write('You are a teenager');
-// } else if (age > 18 && age <= 60) {
-//     document.write('You are a adult');
-// } else if (age > 60) {
-//     document.write('You are an old man');
-// } else {
-//     document.write('You entered wrong value');
+// while (lastNumber) {
+//   let divider = lastNumber;
+//   lastNumber = firstNumber % lastNumber;
+//   firstNumber = divider;
 // }
 
-//Task 2
-// const number = prompt('Enter the number from 0 to 9');
-// switch (number) {
-//     case (number = 0):
-//         console.log('0 is )');
-//         break;
-//     case (number = 1):
-//         console.log('1 is !');
-//         break;
-//     case (number = 2):
-//         console.log('2 is @');
-//         break;
-//     case (number = 3):
-//         console.log('3 is #');
-//         break;
-//     case (number = 4):
-//         console.log('4 is $');
-//         break;
-//     case (number = 5):
-//         console.log('5 is %');
-//         break;
-//     case (number = 6):
-//         console.log('6 is ^');
-//         break;
-//     case (number = 7):
-//         console.log('7 is &');
-//         break;
-//     case (number = 8):
-//         console.log('8 is *');
-//         break;
-//     case (number = 9):
-//         console.log('9 is (');
-//         break;
+// alert(`The largest common divis is ${firstNumber}`);
+
+// Task 3
+// let number = +prompt('Please enter some number');
+
+// const initialNumber = number;
+
+// document.write(`All dividers: \n`);
+
+// while (number > 0) {
+//     if (initialNumber % number === 0) {
+//         document.write(`${number}\n`);
+//     }
+//     number--;
 // }
 
-// ------------Task 3--------------
-// let threeDigitNumber = prompt('Enter the number from 100 to 999', 0);
-// threeDigitNumber = threeDigitNumber + '';
-// if (threeDigitNumber[0] == threeDigitNumber[1] || threeDigitNumber[0] == threeDigitNumber[2] || threeDigitNumber[1] == threeDigitNumber[2])
-// {
-//     alert('TRUE');
-// }
-// else
-//     alert('FALSE');
+// Task 4
+// let enterNumber = prompt('Please, enter any number');
+// let counting = 0;
 
-// ------------Task 4------------
-//  let year = prompt('Enter any year', 0);
-//  if (year%4 == 0 && year %100 !== 0)
-//  {
-//      alert('Leap year');
-//  }
-//  else
-//      alert('Not Leap Year');
-
-// ------------Task 5------------
-// let fiveDigitNumber = prompt('Enter the number from 10000 to 99999', 0);
-// fiveDigitNumber = fiveDigitNumber + '';
-// if (fiveDigitNumber === fiveDigitNumber.split('').reverse().join(''))
-//     alert('palindrome');
-// else
-//     alert('NOT palindrome');
-
-// ------------NumberTask 6--------------
-// let amount = prompt('Enter the amount of USD:', 0);
-// let currency = prompt('EUR = 1, UAH = 2, AZN = 3', 0);
-// switch(currency) {
-//     case '1':
-//         console.log(amount*0.83 + 'EUR');
-//         break;
-//     case '2':
-//         console.log(amount*26.75 + 'UAH');
-//         break;
-//     case '3':
-//         console.log(amount*1.7008 + 'AZN');
-//         break;
+// for (let i=0; i < enterNumber.length; i++) {
+//     counting++;
 // }
 
-// ------------Task 7--------------
-// let amountOfCash = prompt('Enter the value of purchase:');
-// if (amountOfCash >=200 && amountOfCash < 300)
-//     alert(amountOfCash/100*97 + '$ with 3% discount');
-// else if (amountOfCash >=300 && amountOfCash < 500)
-//     alert(amountOfCash/100*95 + '$ with 5% discount');
-// else if (amountOfCash >=500)
-//     alert(amountOfCash/100*93 + '$ with 7% discount');
+// alert(`The number you entered has ${counting} symbols`)
 
-// ------------Task 8--------------
-// const circle = +prompt('Enter a circle perimeter');
-// const square = +prompt('Enter a square perimetr');
-// const circleDiametr = ((circle / (2 * Math.PI)) * 2);
-// const squareSide = square / 4;
-//  if (circleDiametr <= squareSide) {
-//   console.log ('The circle will fit in a square');
-//  } else if (circleDiametr => squareSide) {
-//      console.log ('The circle is too large for this square');
-//  }
+// Task 5
+// let positiveNumberCount = 0;
+// let negativeNumberCount = 0;
+// let zeroNumberCount = 0;
+// let evenNumberCount = 0;
+// let oddNumberCount = 0;
 
-// ------------Task 9--------------
-// const capital = prompt('What is the capital of Great Britain? 1 - London 2 - New York 3 - Paris');
-// const championsLeague = prompt('Which football team has won the Champions League the most? 1 - Real Madrid Club 2 - FC Bayern München 3 -  FC Barcelona');
-// const country = prompt('What is the most populated country? 1 - the USA 2 - Japan 3 - China');
-// let score = 0;
-// if (capital === 1) {
-//     score += 2;
+// for (i = 0; i < 10; i++) {
+//     let currentNumber = +prompt('Please enter 10 numbers')
+//     if (currentNumber > 0) {
+//         positiveNumberCount++;
+//     } else if (currentNumber <0) {
+//         negativeNumberCount++;
+//     } else {
+//         zeroNumberCount++;
+//     } 
+//     if (currentNumber % 2 == 0) {
+//         evenNumberCount++;
+//     } else {
+//         oddNumberCount++;
+//     }
 // }
-// if (championsLeague === 1) {
-//     score += 2;
-// }
-// if (country === 3) {
-//     score += 2;
-// }
-// document.write('Your score is' + score);
 
-//-----------Task 10-------------
-// let date = prompt('Enter the date : day-month-year ');
-// date = date.split('-');
-// let oldDate = new Date(date[2], date[1] - 1, date[0]);
-// oldDate.setDate(oldDate.getDate() + 1);
-// alert(oldDate);
+// document.write(`You are entered: ${positiveNumberCount} positiv numbers, ${negativeNumberCount} negativ numbers,
+// ${zeroNumberCount} zero numbers, ${evenNumberCount} even numbers, ${oddNumberCount} odd numbers`);
+
+// Task 6
+// do {
+//     let firstNumber = +prompt('Enter the first number');
+//     let sign = prompt('Choose a sign - + / *');
+//     let secondNumber = +prompt('Enter the second number');
+    
+//         switch (sign) {
+//             case '+':
+//                 alert(firstNumber + secondNumber);
+//                 break;
+//             case '-':
+//                 alert(firstNumber - secondNumber);
+//                 break;
+//             case '/':
+//                 alert(firstNumber / secondNumber);
+//                 break;
+//             case '*':
+//                 alert(firstNumber * secondNumber);
+//             default:
+//                 break;
+//         }
+// }
+//  while (confirm('Want to solve another example?'));
+
+// Task 7
+
+// let number = prompt('Enter a number!');
+// let shift = +prompt('Enter a shift number!');
+
+// number = number.slice(shift, number.length) + number.slice(0, shift);
+
+// alert(`The result of shift is: ${number}`);
+
+// Task 8
+// const days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
+// let currentDay = 0;
+
+// while (confirm(`${days[currentDay]}. Want to see the next day?`)) {
+//     currentDay = (currentDay + 1) % days.length;
+// }
+
+// Task 9
+
+// let x=prompt("Enter a number:",'');
+// let alertBody = '';
+// for (let i=1; i<10; i++) {
+//   alertBody += x + "*" + i +"="+x*i + '\n';
+// }
+// // alert(alertBody);
+
+// Task 10
+
+let minValue = 0;
+let maxValue = 100;
+let N = maxValue / 2;
+let isGame = true;
+
+let is
+do {
+ let answer = prompt("Ваше число  ${N} ?, smaller/bigger/yes");
+
+  switch (answer) {
+    case 'smaller':
+     maxValue = N - 1;   
+     N = parseInt(minValue + ((maxValue - minValue) / 2));
+     break;
+    case 'bigger':
+     minValue = N + 1;   
+     N = parseInt(minValue + ((maxValue - minValue) / 2));
+     break;
+    default:
+        isGame = false;           
+  }
+} while (isGame)
+
+console.log('Your Number is: ${N}')
