@@ -60,3 +60,16 @@
 // }
 
 // alert(countArea(width,height));
+
+// Task 5
+// Написать функцию, которая проверяет, является ли переданное ей число совершенным.
+// Совершенное число – это число, равное сумме всех своих собственных делителей.
+
+$(document).ready(function () {
+    const container = $('#container');
+    const button = $("#my-button");
+
+    button.on('click', function(event) {
+      
+    });
+});
