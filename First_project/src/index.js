@@ -1,75 +1,112 @@
-// Task 1
-// Написать функцию, которая принимает 2 числа и возвращает -1, 
-// если первое меньше, чем второе; 1 – если первое больше, чем второе; и 0 – если числа равны.
-// let numb1 = +prompt('Enter the first number');
-// let numb2 = +prompt('Enter te second number')
+$(document).ready(function(){
+	
+	// $('.slider').slick();
 
-// function resultNumber (numb1 , numb2) {
-//     if (numb1 < numb2) {
-//         document.write(-1);
-//     } else if (numb1 > numb2) {
-//         document.write(1);
-//     } else {
-//         document.write(0);
-//     }
-// }
+	$('.slider').slick({
+	  arrows : false,
+	  dots: true,
+	});
 
-// resultNumber(numb1, numb2);
 
-// Task 2 
-// Написать функцию, которая вычисляет факториал переданного ей числа.
-// let num = +prompt("Enter the number");
-// function factorial(num){
-//     for(var i = num - 1; i > 0; i--){
-//          num *= i;
-//      }
-//      return num;     
-//    }
-   
-// // alert(factorial(num));
+	$('.carousel').slick({
+	  arrows : true,
+	  dots: true,
+	   autoplay: true,
+       autoplaySpeed: 3000,
+	});
 
-// Task 3
-// Написать функцию, которая принимает три отдельные цифры и превращает их в одно число. 
-// Например: цифры 1, 4, 9 превратятся в число 149.
 
-// let numb1 = prompt('Enter the first number');
-// let numb2 = prompt('Enter the second number');
-// let numb3 = prompt('Enter the third number');
-
-// function allTogether(numb1, numb2, numb3) {
-//     return numb1 + numb2 + numb3;
-// }
-
-// alert(allTogether(numb1, numb2 , numb3));
-
-// Task 4 
-// Написать функцию, которая принимает длину и ширину прямоугольника и вычисляет его площадь.
-//  Если в функцию передали 1 параметр, то она вычисляет площадь квадрата.
-
-// let width = prompt('Enter the width');
-// let height = prompt('Enter the height');
-
-// function countArea (width, height) {
-//     if (width != '' && height != '') {
-//         return width * height;
-//     } else if (width != '' && height == '') {
-//         return width * width;
-//     } else if (width == '' && height != '') {
-//         return height * height;
-//     }
-// }
-
-// alert(countArea(width,height));
-
-// Task 5
-// Написать функцию, которая проверяет, является ли переданное ей число совершенным.
-// Совершенное число – это число, равное сумме всех своих собственных делителей.
-
-$(document).ready(function () {
-    const container = $('#container');
-    const button = $("#my-button");
-
-    button.on('click', function(event) {
-      
-    });
 });
+
+function initMap() {
+
+  map = new google.maps.Map(document.getElementById("map"), {
+    center: { lat: 49.54696740746472, lng: 25.61669827416196 },
+    zoom: 16, 
+    styles: [
+        { elementType: "geometry", stylers: [{ color: "#242f3e" }] },
+        { elementType: "labels.text.stroke", stylers: [{ color: "#242f3e" }] },
+        { elementType: "labels.text.fill", stylers: [{ color: "#746855" }] },
+        {
+          featureType: "administrative.locality",
+          elementType: "labels.text.fill",
+          stylers: [{ color: "#d59563" }],
+        },
+        {
+          featureType: "poi",
+          elementType: "labels.text.fill",
+          stylers: [{ color: "#d59563" }],
+        },
+        {
+          featureType: "poi.park",
+          elementType: "geometry",
+          stylers: [{ color: "#263c3f" }],
+        },
+        {
+          featureType: "poi.park",
+          elementType: "labels.text.fill",
+          stylers: [{ color: "#6b9a76" }],
+        },
+        {
+          featureType: "road",
+          elementType: "geometry",
+          stylers: [{ color: "#38414e" }],
+        },
+        {
+          featureType: "road",
+          elementType: "geometry.stroke",
+          stylers: [{ color: "#212a37" }],
+        },
+        {
+          featureType: "road",
+          elementType: "labels.text.fill",
+          stylers: [{ color: "#9ca5b3" }],
+        },
+        {
+          featureType: "road.highway",
+          elementType: "geometry",
+          stylers: [{ color: "#746855" }],
+        },
+        {
+          featureType: "road.highway",
+          elementType: "geometry.stroke",
+          stylers: [{ color: "#1f2835" }],
+        },
+        {
+          featureType: "road.highway",
+          elementType: "labels.text.fill",
+          stylers: [{ color: "#f3d19c" }],
+        },
+        {
+          featureType: "transit",
+          elementType: "geometry",
+          stylers: [{ color: "#2f3948" }],
+        },
+        {
+          featureType: "transit.station",
+          elementType: "labels.text.fill",
+          stylers: [{ color: "#d59563" }],
+        },
+        {
+          featureType: "water",
+          elementType: "geometry",
+          stylers: [{ color: "#17263c" }],
+        },
+        {
+          featureType: "water",
+          elementType: "labels.text.fill",
+          stylers: [{ color: "#515c6d" }],
+        },
+        {
+          featureType: "water",
+          elementType: "labels.text.stroke",
+          stylers: [{ color: "#17263c" }],
+        },
+      ],
+  });
+  new google.maps.Marker({
+    position: { lat: 49.54696740746472, lng: 25.61669827416196 },
+    map,
+    title: "Hello Ruslan!",
+  });
+}
